@@ -1,0 +1,155 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 249, 249);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+body{
+    background-color: #f8f5f5;
+}
+.menu {
+    display: flex;
+}
+.logo {
+    color: #27ae42;
+    font-weight: 700;
+    font-size: 25px;
+}
+.logo span {
+    color: #273e60;
+}    
+.menu li {
+    margin: 0 15px;
+    list-style: none;
+}
+.menu li a {
+     font-size: 14px;
+     text-decoration: 0;
+     color: #999;
+     position: relative;
+}
+.menu li a::before {
+     position: absolute;
+     top: -5px;
+     left: 0;
+     content: "";
+     width: 0;
+     height: 2px;
+     border-radius: 6px;
+     background-color: #27ae60;
+     transition: 0.5s;
+}
+.menu li a:hover::before {
+     width: 100%;
+}
+ .menu li a::after {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: "";
+     width: 0;
+     height: 2px;
+     border-radius: 6px;
+     background-color: #27ae60;
+     transition: 0.5s;
+ }
+ .menu li a:hover::after {
+     width: 100%;
+ }
+ .menu li a:hover {
+     color: #000;
+ }
+ #quote{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: calc(20vh - 10px);
+    justify-content: space-between;
+ }
+ 
+.choose h3 {
+    color: #27ae60;
+    font-size: 50px;
+    text-align: center;
+}
+.choose h3{
+        
+        position: relative;
+        animation-name: example;
+        animation-duration: 6s;
+        animation-delay: 0,5s;
+}
+    @keyframes example {
+        0%   {color:rgb(28, 73, 188); left:0px; top:0px;}
+        25%  {color:rgb(30, 255, 0); left:200px; top:0px;}
+        0%   {color:rgb(0, 72, 255); left:0px; top:0px;}
+    } 
+ol{
+    background: #be1405;
+    padding: 20px;
+    font-size: medium;
+} 
+ol ul {
+    background: #ffffff;
+    padding: 20px;
+    font-size: smaller;
+
+}  
+.needs h3{
+    font-style: italic;
+    font: size 100px;;
+    color:rgb(212, 15, 18);
+    text-decoration: underline;
+}
+#course{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+#course .coursebox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(320px ,1fr));
+    grid-gap: 1rem;
+    margin-top: 80px;
+}
+
+#course .Courses{
+    text-align: start;
+    background: #f9f9ff;
+    height: 100%;
+    position: relative;
+}
+#course .Courses img {
+    width:100%;
+    height:80%;
+    background-size: cover;
+    background-position: center;
+}
+#course  .Courses .details{
+    padding: 15PX 15PX 0 15PX;
+}
+#course  .Courses .details i {
+    color: yellow;
+    font-size: .9REM;
+}
+#course  .Courses .cost{
+    background-color: aqua;
+    color: #f9f9ff;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right:15PX;
+    bottom: 100PX;
+}
